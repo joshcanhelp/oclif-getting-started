@@ -1,0 +1,25 @@
+{
+  "name": "new-oclif-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "new-oclif-cli": "./bin/run.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -w"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@oclif/core": "^3.26.0",
+    "typescript": "^5.4.4"
+  },
+  "oclif": {
+    "bin": "new-oclif-cli",
+    "commands": "./dist/commands",
+    "dirname": "new-oclif-cli"
+  },
+  "type": "module"
+}
